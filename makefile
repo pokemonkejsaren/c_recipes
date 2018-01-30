@@ -1,10 +1,31 @@
-all: pizza ciabatta kvass
+CC = gcc
+CFLAGS = -O3 -Wall
 
-pizza:
-	gcc -Wall -o pizza pizza.c
+OBJECT_pizza = pizza.o
+OBJECT_ciabatta = ciabatta.o
+OBJECT_kvass = kvass.o
+OBJECT_noknead_ciabatta = noknead_ciabatta.o
 
-ciabatta:
-	gcc -Wall -o ciabatta ciabatta.c
+PROGRAM_pizza = pizza
+PROGRAM_ciabatta = ciabatta
+PROGRAM_kvass = kvass
+PROGRAM_noknead_ciabatta = noknead_ciabatta
 
-kvass:
-	gcc -Wall -o kvass kvass.c
+
+all: $(PROGRAM_pizza) $(PROGRAM_ciabatta) $(PROGRAM_kvass) $(PROGRAM_noknead_ciabatta) clean
+
+$(PROGRAM_pizza): $(OBJECT_pizza)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+$(PROGRAM_ciabatta): $(OBJECT_ciabatta)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+$(PROGRAM_kvass): $(OBJECT_kvass)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+$(PROGRAM_noknead_ciabatta): $(OBJECT_noknead_ciabatta)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+clean:
+	rm -f *.o
+	touch *.c

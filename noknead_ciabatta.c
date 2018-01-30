@@ -1,10 +1,10 @@
-// pizzarecept
+// no knead ciabatta
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {
 
   // ingredient list
-  enum INGREDIENTS {FLOUR, WATER, OIL, SALT, YEAST};
+  enum INGREDIENTS {FLOUR, WATER, SALT, YEAST};
   int nbr_ingredients = YEAST + 1;
 
   // take number of eaters as input
@@ -12,23 +12,21 @@ int main( int argc, char *argv[] )  {
   sscanf(argv[1], "%lf", &nbr_eaters);
 
   // weights
-  double base_weight = 170; // large pizza
+  double base_weight = 136; // one bread
   double weight = base_weight * nbr_eaters;
 
   // proportions
   double prop[nbr_ingredients];
 
   prop[FLOUR] = 1.0;
-  prop[WATER] = 0.610;
-  prop[OIL] = 0.075;
-  prop[YEAST] = 0.005;
-  prop[SALT] = 0.02;
+  prop[WATER] = 0.870;
+  prop[YEAST] = 0.037;
+  prop[SALT] = 0.016;
 
   // print
   printf("ingredients:\n");
   printf("flour\t%f\n", prop[FLOUR] * weight);
   printf("water\t%f\n", prop[WATER] * weight);
-  printf("oil\t%f\n", prop[OIL] * weight);
   printf("yeast\t%f\n", prop[YEAST] * weight);
   printf("salt\t%f\n", prop[SALT] * weight);
 
@@ -36,10 +34,11 @@ int main( int argc, char *argv[] )  {
   printf("instructions:\n");
 
   printf("\n");
-  printf("dissolve yeast, add all, knead... KNEAD\n");
-  printf("rise for at least 18 h fridge lmao\n");
-  printf("form a pizza\n");
-  printf("bake as hot as possible on stone lmao\n");
+  printf("Mix all\n");
+  printf("rise for at least 18 h room temp lmao\n");
+  printf("carefully form a some loaves\n");
+  printf("rise for 2 h room temp lmao\n");
+  printf("bake 220 C 35-45 min\n");
 
   return 0;
 }
