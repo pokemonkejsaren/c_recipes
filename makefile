@@ -1,29 +1,35 @@
 CC = gcc
 CFLAGS = -O3 -Wall
 
-OBJECT_pizza = pizza.o
-OBJECT_ciabatta = ciabatta.o
-OBJECT_kvass = kvass.o
-OBJECT_noknead_ciabatta = noknead_ciabatta.o
+# O_* for object
+O_pizza = pizza.o
+O_ciabatta = ciabatta.o
+O_kvass = kvass.o
+O_noknead_ciabatta = noknead_ciabatta.o
+O_noknead_baguette = noknead_baguette.o
 
-PROGRAM_pizza = pizza
-PROGRAM_ciabatta = ciabatta
-PROGRAM_kvass = kvass
-PROGRAM_noknead_ciabatta = noknead_ciabatta
+# P_* for program
+P_pizza = pizza
+P_ciabatta = ciabatta
+P_kvass = kvass
+P_noknead_ciabatta = noknead_ciabatta
+P_noknead_baguette = noknead_baguette
 
+all: $(P_pizza) $(P_ciabatta) $(P_kvass) $(P_noknead_ciabatta) $(P_noknead_baguette) clean
 
-all: $(PROGRAM_pizza) $(PROGRAM_ciabatta) $(PROGRAM_kvass) $(PROGRAM_noknead_ciabatta) clean
-
-$(PROGRAM_pizza): $(OBJECT_pizza)
+$(P_pizza): $(O_pizza)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-$(PROGRAM_ciabatta): $(OBJECT_ciabatta)
+$(P_ciabatta): $(O_ciabatta)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-$(PROGRAM_kvass): $(OBJECT_kvass)
+$(P_kvass): $(O_kvass)
 	$(CC) -o $@ $^ $(CFLAGS)
 
-$(PROGRAM_noknead_ciabatta): $(OBJECT_noknead_ciabatta)
+$(P_noknead_ciabatta): $(O_noknead_ciabatta)
+	$(CC) -o $@ $^ $(CFLAGS)
+
+$(P_noknead_baguette): $(O_noknead_baguette)
 	$(CC) -o $@ $^ $(CFLAGS)
 
 clean:
