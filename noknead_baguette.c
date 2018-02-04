@@ -1,4 +1,9 @@
 // no knead baguette
+
+/*
+  helt fantastisk bra. något vattnig i smaken men osäker på vad som ska ändras.
+*/
+
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {

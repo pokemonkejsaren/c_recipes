@@ -1,4 +1,9 @@
 // no knead pizzarecept
+
+/*
+   inte så bra än. passar inte som #juggepitsa, utan snarare som mer brödig italiens pitsa med fluffiga kanter. måste ändras
+*/
+
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {

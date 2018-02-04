@@ -1,4 +1,9 @@
 // kvassrecept
+
+/*
+  blandade resultat. Citronen gör susen men fortfarande problem med jästfällning. Bra bubbel nu.
+*/
+
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {

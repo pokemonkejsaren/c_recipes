@@ -1,4 +1,9 @@
 // no knead ciabatta
+
+/*
+  Så bra å enkel jämfört med knådvarianten. Aningen dålig undersida, svampig typ. borde kanske testa att bara mjöla rejält under?
+*/
+
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {

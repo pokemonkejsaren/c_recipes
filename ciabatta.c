@@ -1,4 +1,9 @@
 // ciabattarecept
+
+/*
+  otroligt bra men åxå jobbig att laga, särskilt utan maskin. Kanske öka saltmängd?
+*/
+
 #include <stdio.h>
 
 int main( int argc, char *argv[] )  {

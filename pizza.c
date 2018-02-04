@@ -1,6 +1,10 @@
 // pizzarecept
 #include <stdio.h>
 
+/*
+  Utmärkt för juggepitsa på sten. undersida blir frasig men inte knaprig, kanterna likaså, och inte för fluffiga. osäker på hur förbättra?
+*/
+
 int main( int argc, char *argv[] )  {
 
   // ingredient list
