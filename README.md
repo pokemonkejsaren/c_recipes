@@ -7,4 +7,6 @@ pls not write like "./program three and a half"
 
 write instead "./program 3.5"
 
-feel free to use as you like!
+feel free to use as you like, change and share teh recipes!
+
+R8, H8 and appreci8!
