@@ -23,7 +23,7 @@ int main( int argc, char *argv[] )  {
   double prop[nbr_ingredients];
 
   prop[FLOUR] = 1.0;
-  prop[WATER] = 0.55;
+  prop[WATER] = 0.59;
   prop[OIL] = 0.075;
   prop[YEAST] = 0.005;
   prop[SALT] = 0.02;
